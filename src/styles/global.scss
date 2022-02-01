@@ -1,0 +1,71 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+@import "./fonts.scss";
+
+* {
+  user-select: none;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.hero {
+  background-color: #545454;
+  &.is-fullheight {
+    min-height: calc(100vh - 75px);
+  }
+} 
+
+.navbar {
+  background-color: #545454;
+  padding-top: 15px;
+
+  .navbar-item {
+    color: #fff;
+    border-radius: 15px;
+
+    max-height: 40px;
+  
+    &:hover {
+      color: #000;
+      transition: 0.5s;
+    }
+  
+  }
+}
+
+.title {
+  font-weight:200;
+}
+
+form {
+  max-width: max-content;
+  margin: 40px auto 0;
+}
+
+
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+  
+}
+input[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+
+}
+
+i {
+  color: #545454;
+}
+
+.select {
+  width: 100%;
+
+  select {
+    width: 100%;
+  }
+}
+
+.table {
+  min-width: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
